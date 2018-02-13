@@ -1,0 +1,31 @@
+//press any key to get started
+
+//set wins to zero
+//set number of guesses remaining = 10
+//set the letters already guessed []
+
+//make a list of words that computer chooses for each round
+
+//select a random word from the list of words
+
+//get the lengh of the word/string(computer chosen word) and display underscores for that lenght
+
+//Listen to user input
+
+//when the user types a letter :
+    check if letter is in the string of the word chosen by the computer
+    - YES - reassign the value to the letter
+    - No - add the value to the wrongly guessed array of letters.
+
+Example -
+
+word = madonna
+
+computerGuessedLetter = string: "_ _ _ _ _ _ _"
+                                 0 1 2 3 4 5 6
+
+userGuessedletter = "a"
+for (i=0, i< string.length, i++)
+if (userGuessedzletter === computerGuessedWord[i]){
+    computerGuessedWord = userGuessedletter
+}

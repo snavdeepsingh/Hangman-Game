@@ -21,6 +21,9 @@ document.addEventListener("keyup" , (event) => {
     if (chosenWord.indexOf(userGuess) > -1) {
      // add to the arry of right word   
      rightWord.push(userGuess);
+     // replace underscore with right letter
+     underScore[chosenWord.indexOf(userGuess)] = userGuess;
+     console.log(underScore);
      console.log(rightWord);
     } else {
         // else push it to wrong word array

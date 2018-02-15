@@ -4,7 +4,9 @@ const words = ["dog", "lion", "tiger", "cheetah", "elephant", "leopard", "jaguar
 var chosenWord = words[Math.floor(Math.random() * words.length)];
 console.log(chosenWord);
 // create Underscore based on length of word with a loop
- var underScore = [];
+var rightWord = [];
+var wrongWord = [];
+var underScore = [];
 var generateUnderScore = () => {
     for(var i = 0; i < chosenWord.length; i++){
         underScore.push("_ ");
@@ -14,8 +16,17 @@ var generateUnderScore = () => {
 console.log(generateUnderScore());
 // Get Users guess
 document.addEventListener("keyup" , (event) => {
-    var keyCode = event.keyCode;
-    console.log(keyCode);
+    var userGuess = event.key;
+// if user guess is right 
+    if (chosenWord.indexOf(userGuess) > -1) {
+     // add to the arry of right word   
+     rightWord.push(userGuess);
+     console.log(rightWord);
+    } else {
+        // else push it to wrong word array
+        wrongWord.push(userGuess);
+        console.log(wrongWord);
+    }
 });
 // check if the guess is right
 // If right push to right array

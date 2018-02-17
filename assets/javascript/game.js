@@ -23,7 +23,6 @@ var generateUnderScore = () => {
 var myButton = document.querySelector(".start");
 myButton.addEventListener("click", function(event){
     playGame();
-    console.log(guessesRemaining);
 });
 
 

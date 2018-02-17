@@ -1,24 +1,51 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
     <meta charset="UTF-8">
     <title>Hangman Game</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
     <!-- reset.css -->
-   <link rel="stylesheet" href="assets/css/reset.css"/>
-   <!-- style.css -->
-   <link rel="stylesheet" href="assets/css/style.css"/>
-    <script src="assets/javascript/game.js"></script>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <!-- style.css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
 </head>
-<body>
-    <h1>HangMan</h1>
-    <div class="container"></div>
-        <header>
-            <h1>Hangman Game</h1>
-            <h3>Animals</h3>
-        </header>
-        <div class="underscores">_ _ _ _</div>
-        <div class="rightGuess">right guess</div>
-        <div class="wrongGuess">wrong guess</div>
+
+<body class="container" backgroiund=">
+    <div class="jumbotron">
+        <h1 class="display-4"></h1>
+        <div class="card1" style="width: 18rem;">
+            <img class="card-img-top" src="assets/images/icon1024.PNG" alt="Card image cap">
+        </div>
+
+        <div class="card2" style="width: 18rem;">
+            <img class="card-img-top" src="assets/images/HangmanTitle.PNG" alt="Card image cap">
+        </div>
+        <p class="lead">Click the button below to start the game</p>
+        <hr class="my-4">
+        <p></p>
+        <p class="lead">
+            <a class="start" href="#" role="button">Start</a>
+        </p>
+    </div>
+    <div class="container data">
+            <div class="row">
+              <div class="col-4 gameData">Guesses Remianing</div>
+              <div class="col-8 gameData"><p class="guessesRemaining"></p></div>
+              <div class="w-100"></div>
+              <div class="col-4 gameData">Wrong Guesses</div>
+              <div class="col-8 gameData wrongGuess"></div>
+            </div>
+          </div>
+          <div class="container-fluid underscore">
+              </div>
+    
+    <div class="guessesRemaining"></div>
+    <script src="assets/javascript/game.js"></script>
+
+
 </body>
+
 </html>
